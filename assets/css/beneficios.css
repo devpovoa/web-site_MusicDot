@@ -1,0 +1,99 @@
+/* Definindo o style, fonte, background dos beneficios */
+.beneficios {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficios-titulo {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.beneficios-lista li {
+    padding-top: 5.5rem;
+    background-repeat: no-repeat;
+    background-size: 4rem 4rem;
+    background-position: top 20px center;
+}
+
+.beneficios-paravoce {
+    background-image: url("../img/icone-beneficios-tudo-para-voce.svg");
+}
+
+.beneficios-duvidas {
+    background-image: url("../img/icone-beneficios-nenhuma-duvida.svg");
+}
+
+.beneficios-didatica {
+    background-image: url("../img/icone-beneficios-didatica-cuidadosa.svg");
+}
+
+.beneficios-online {
+    background-image: url("../img/icone-beneficios-online.svg");
+}
+
+.beneficio-titulo {
+    font-size: .8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+}
+
+.beneficio-texto {
+    line-height: 1rem;
+}
+
+/* Definindo o estilo para telas maiores */
+@media (min-width:768px) {
+    .beneficios {
+        margin-bottom: 3.7rem;
+    }
+
+    .beneficios-lista {
+        display: grid;
+        grid-template-columns: 17.5rem 17.5rem;
+        gap: 1rem;
+    }
+
+    .beneficios-titulo {
+        margin-bottom: 1rem;
+    }
+
+    .beneficio-titulo {
+        font-size: 1.1rem;
+    }
+
+    .beneficio-texto {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .beneficios-titulo {
+        font-size: 1.3rem;
+    }
+
+    .beneficios-lista{
+        gap: 1.3rem;
+        grid-template-columns: 22.5rem 22.5rem;
+    }
+
+    .beneficios-lista li{
+        padding-top: 7.25rem;
+        background-size: 6rem 6rem;
+    }
+
+    .beneficio-titulo{
+        font-size: 1.2rem;
+        margin-bottom: .6rem;
+    }
+
+    .beneficio-texto{
+        font-size: .9rem;
+        line-height: 1.2rem;
+    }
+}

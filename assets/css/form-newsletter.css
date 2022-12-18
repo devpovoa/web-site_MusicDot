@@ -1,0 +1,33 @@
+/* Definindo o estilo do formulário, tamanho, cor e display */
+.form-newsletter {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 2px solid #E93D50;
+    background-color: #E93D50;
+}
+
+.form-newsletter-label{
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.form-newsletter-campo{
+    padding: 0.6rem 0.4rem;
+    flex-grow: 1;
+    border: none;
+}
+
+.form-newsletter-botao{
+    flex-grow: 1;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #E93D50;
+    color: #FFF;
+}

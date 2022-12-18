@@ -1,0 +1,64 @@
+/* Definindo a cor, tamanho e forma do layout mobile com o uso de display flex ou flex container */
+.cabecalho {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.23em;
+    color: #FFF;
+}
+
+.cabecalho-logo {
+    padding: 1.5em 0;
+    width: 14.5em;
+}
+
+.cabecalho-menu {
+    background-color: #272B3A87;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cabecalho-item-menu {
+    display: inline-block;
+}
+
+.cabecalho-item-menu a {
+    display: inline-block;
+    padding: 1.86em 1.42em;
+}
+
+/* Definindo a tela para dispositivos maiores com display's fluídos e melhores destaques */
+@media (min-width: 640px) {
+    .cabecalho {
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho-logo {
+        padding: 2.5em 0;
+    }
+
+    .cabecalho-menu {
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 770px) {
+    .cabecalho-item-menu-matricula {
+        margin-left: 1.42em;
+        border-radius: 6px;
+        background-color: #E93D50;
+    }
+
+    .cabecalho-item-menu-matricula a {
+        padding: 1.8em 3.5em;
+    }
+}

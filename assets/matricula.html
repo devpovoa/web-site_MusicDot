@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/matricula.css">
+    <link rel="icon" href="./img/favicon.ico">
+    <title>Matriculas</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href="index.html" class="navbar-brand"><img src="./img/musicdot-logo-light.svg" alt="Logo da Musicdot"
+                    class="header-navbar-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Matriculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Emails</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mb-4">
+        <div class="jumbotron bg-dark header-matricula text-light mt-3">
+            <div class="container">
+                <h1>Escolher cursos</h1>
+                <p class="lead">Escolha os cursos que gostaria de ser matricular</p>
+            </div>
+        </div>
+
+        <table class="table table-hover rounded-top">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Tempo</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+                    <td>Teclado & Piano</td>
+                    <td>20h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="30"></td>
+                    <td>Violão & Guitarra</td>
+                    <td>30h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+                    <td>Baixo</td>
+                    <td>12h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+                    <td>Bateria</td>
+                    <td>20h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="30"></td>
+                    <td>Percussão</td>
+                    <td>30h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+                    <td>Canto</td>
+                    <td>12h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+                    <td>Áudio</td>
+                    <td>20h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="30"></td>
+                    <td>Teoria</td>
+                    <td>30h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+                    <td>Sopro</td>
+                    <td>12h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+                    <td>Cordas</td>
+                    <td>20h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="30"></td>
+                    <td>SaxFone</td>
+                    <td>30h</td>
+                </tr>
+                <tr>
+                    <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+                    <td>Bluzz</td>
+                    <td>12h</td>
+                </tr>
+
+                <tr class="bg-dark text-light">
+                    <td>Total</td>
+                    <td class="js-total-de-cursos">0 cursos(s)</td>
+                    <td class="js-total-de-horas">0h</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" class="js-botao-matricula btn btn-outline-dark btn-lg mb-4">Confirmar Matrícula</button>
+    </main>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/matricula.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+/* Definindo o Rodapé, estilo, tamanho */
+.rodape {
+    padding: 2em 5%;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.rodape-logo {
+    width: 11.25em;
+    margin-bottom: 1em;
+}
+
+.rodape-info-empresa {
+    line-height: 1.5;
+}
+
+.rodape-lista-midias-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.rodape-item-midias-socias {
+    width: 2.62em;
+    margin: 0 0.25em;
+}
+
+.rodape-lista-midias-sociais img {
+    width: 100%;
+}
+
+.rodape-titulo {
+    margin-bottom: 1em;
+    font-size: 1.45em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.rodape-item-lista {
+    font-weight: 500;
+    margin: 0.625em 0;
+}
+
+/* Definindo a tela para dispositivos maiores com display's fluídos e melhores destaques */
+@media (max-width: 640px) {
+    .rodape-secao + .rodape-secao{
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1200px) {
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+
+    .rodape-secao-sobre,
+    .rodape-secao-cursos,
+    .rodape-secao-links,
+    .rodape-secao-newsletter{
+        width: 45%;
+    }
+
+    .rodape-secao-cursos{
+        order: 1;
+        margin: 0;
+    }
+
+    .rodape-secao-links{
+        order: 2;
+        margin: 0;
+    }
+
+    .rodape-secao-sobre{
+        order: 3;
+        margin-top: 2em;
+    }
+
+    .rodape-secao-newsletter{
+        order: 4;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rodape{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85rem;
+        text-align: left;
+    }
+
+    .rodape-titulo{
+        font-size: 1em;
+    }
+
+    .rodape-lista-midias-sociais{
+        justify-content: left;
+    }
+
+    .rodape-secao{
+        margin-top: 0;
+        
+    }
+
+    .rodape-secao + .rodape-secao{
+        margin-left: 2em;
+    }
+}

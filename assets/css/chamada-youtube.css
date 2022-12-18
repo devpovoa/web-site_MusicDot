@@ -1,0 +1,160 @@
+/* Definindo o style, font , background para a chamada YouTube */
+.chamada-youtube {
+    background-color: #2e4255;
+    display: grid;
+    justify-content: center;
+}
+
+.chamada-youtube-canal {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem 2rem .9rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.icone-youtube::before {
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background-image: url("../img/icone-youtube.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.canal-titulo {
+    color: #e93d50;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: .9rem;
+    margin-bottom: .1rem;
+    letter-spacing: .5px;
+}
+
+.canal-texto {
+    font-size: .6rem;
+    letter-spacing: .8px;
+    line-height: 12px;
+    margin-bottom: 1rem;
+}
+
+.canal-button {
+    color: #FFF;
+    background-color: #e93d50;
+}
+
+.video-descricao {
+    width: 85%;
+}
+
+.descricao-titulo {
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: .5rem;
+}
+
+.descricao-titulo::before {
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background-image: url("../img/play-button.svg");
+    background-size: 100%;
+    display: block;
+    margin: 1.2rem auto 1rem;
+}
+
+.chamada-youtube-video1 {
+    background-image: url("../img/videos-thumbnail-video1.png");
+}
+
+.chamada-youtube-video2 {
+    background-image: url("../img/videos-thumbnail-video2.png");
+}
+
+.chamada-youtube-video1,
+.chamada-youtube-video2 {
+    background-size: cover;
+    width: 100%;
+}
+
+/* Definindo estilos para telas maiores */
+@media (min-width: 768px) {
+    .chamada-youtube {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "chamada chamada"
+            "video1 video2"
+        ;
+    }
+
+    .youtube-informacao {
+        padding: 2rem 17%;
+        box-sizing: border-box;
+        grid-area: chamada;
+    }
+
+    .icone-youtube::before {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .chamada-youtube-video1 {
+        grid-area: video1;
+    }
+
+    .chamada-youtube-video2 {
+        grid-area: video2;
+    }
+
+    .canal-titulo {
+        font-size: 1.5rem;
+    }
+
+    .descricao-texto {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .youtube-informacao {
+        padding: 4rem 20%;
+    }
+
+    .icone-youtube::before{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .canal-titulo{
+        font-size: 2rem;
+        margin-bottom: .4rem;
+    }
+
+    .canal-texto{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .video-descricao{
+        width: 75%;
+        text-align: left;
+    }
+
+    .descricao-titulo{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .descricao-texto{
+        font-size: .9rem;
+    }
+}
