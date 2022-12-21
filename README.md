@@ -11,8 +11,10 @@
 # Sumário :bookmark_tabs:
 
 ### Projeto do site MusicDot :musical_note:
+<p>Todo conteúdo referênte ao desenvolvimento do site foi extraído da 
+<a href="https://www.caelum.com.br">Caelum</a>.</p> 
 
-#### :hammer: Ferramentas de uso:
+### Ferramentas utilizada para desenvolvimento :hammer:
 
 ###### :white_check_mark: VSCode
 
